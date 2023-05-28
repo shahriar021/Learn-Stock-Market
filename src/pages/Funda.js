@@ -1,86 +1,53 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
 export default function Funda() {
   return (
     <div>
-      <p>
-        <a
-          className="btn btn-primary"
-          data-bs-toggle="collapse"
-          href="#multiCollapseExample1"
-          role="button"
-          aria-expanded="false"
-          aria-controls="multiCollapseExample1"
-        >
-          Toggle first element
-        </a>
-        <button
-          className="btn btn-primary"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#multiCollapseExample2"
-          aria-expanded="false"
-          aria-controls="multiCollapseExample2"
-        >
-          Toggle second element
-        </button>
-        <button
-          className="btn btn-primary"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#multiCollapseExample3"
-          aria-expanded="false"
-          aria-controls="multiCollapseExample3"
-        >
-          Toggle 3rd element
-        </button>
-        <button
-          className="btn btn-primary"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#multiCollapseExample4"
-          aria-expanded="false"
-          aria-controls="multiCollapseExample4"
-        >
-          Toggle 4 element
-        </button>
-      </p>
+      <Navbar />
+      <h1>Fundamental Analysis</h1>
       <div className="row">
-        <div className="col">
-          <div className="collapse multi-collapse" id="multiCollapseExample1">
-            <div className="card card-body">
-              Some placeholder content for the first collapse component of this
-              multi-collapse example. This panel is hidden by default but
-              revealed when the user activates the relevant trigger.
-            </div>
+        <div className="col-4">
+          <div
+            id="simple-list-example"
+            className="d-flex flex-column gap-2 simple-list-example-scrollspy text-center"
+          >
+            <a className="p-1 rounded" href="#simple-list-item-1">
+              Item 1
+            </a>
+            <a className="p-1 rounded" href="#simple-list-item-2">
+              Item 2
+            </a>
+            <a className="p-1 rounded" href="#simple-list-item-3">
+              Item 3
+            </a>
+            <a className="p-1 rounded" href="#simple-list-item-4">
+              Item 4
+            </a>
+            <a className="p-1 rounded" href="#simple-list-item-5">
+              Item 5
+            </a>
           </div>
         </div>
-        <div className="col">
-          <div className="collapse multi-collapse" id="multiCollapseExample2">
-            <div className="card card-body">
-              Some placeholder content for the second collapse component of this
-              multi-collapse example. This panel is hidden by default but
-              revealed when the user activates the relevant trigger.
-            </div>
-          </div>
-        </div>
-        <div className="col">
-          <div className="collapse multi-collapse" id="multiCollapseExample3">
-            <div className="card card-body">
-              Some placeholder content for the second collapse component of this
-              multi-collapse example. This panel is hidden by default but
-              revealed when the user activates the relevant trigger.
-            </div>
-          </div>
-        </div>
-
-        <div className="col">
-          <div className="collapse multi-collapse" id="multiCollapseExample4">
-            <div className="card card-body">
-              Some placeholder content for the second collapse component of this
-              multi-collapse example. This panel is hidden by default but
-              revealed when the user activates the relevant trigger.
-            </div>
+        <div className="col-8">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#simple-list-example"
+            data-bs-offset="0"
+            data-bs-smooth-scroll="true"
+            className="scrollspy-example"
+            tabindex="0"
+          >
+            <h4 id="simple-list-item-1">Item 1</h4>
+            <p>...</p>
+            <h4 id="simple-list-item-2">Item 2</h4>
+            <p>...</p>
+            <h4 id="simple-list-item-3">Item 3</h4>
+            <p>...</p>
+            <h4 id="simple-list-item-4">Item 4</h4>
+            <p>...</p>
+            <h4 id="simple-list-item-5">Item 5</h4>
+            <p>...</p>
           </div>
         </div>
       </div>

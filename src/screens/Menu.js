@@ -14,7 +14,7 @@ export default function menu() {
           <div className="card">
             <h2>Fundamentel Analysis</h2>
             <br></br>
-            
+
             <Link to="/funda">learn here</Link>
           </div>
         </div>
@@ -22,30 +22,63 @@ export default function menu() {
           <div className="card">
             <h2>Technical Analysis</h2>
             <br></br>
+            <br></br>
             
             <Link to="/funda">learn here</Link>
           </div>
         </div>
         <div className="column">
           <div className="card">
-            <h2>Technical Analysis</h2>
+            <h2>The Support and Resistance</h2>
             <br></br>
-           
-            <Link to="/funda">learn here</Link>
+
+            <Link to="/sr">learn here</Link>
           </div>
         </div>
         <div className="column">
           <div className="card">
-            <h2>Technical Analysis</h2>
+            <h2>candlestick Patterns</h2>
             <br></br>
             <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
-            <Link to="/funda">learn here</Link>
+            <Link to="/cn">learn here</Link>
           </div>
         </div>
         <br></br>
         <div className="column">
           <div className="card">
-            <h2>Technical Analysis</h2>
+            <h2>Risk Management</h2>
+            <br></br>
+            <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
+            <Link to="/risk">learn here</Link>
+          </div>
+        </div>
+        <div className="column">
+          <div className="card">
+            <h2>Intraday Trading</h2>
+            <br></br>
+            <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
+            <Link to="/intrad">learn here</Link>
+          </div>
+        </div>
+        <div className="column">
+          <div className="card">
+            <h2>Trading Rules</h2>
+            <br></br>
+            <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
+            <Link to="/tradinrules">learn here</Link>
+          </div>
+        </div>
+        <div className="column">
+          <div className="card">
+            <h2>Mindset</h2>
+            <br></br>
+            <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
+            <Link to="/mind">learn here</Link>
+          </div>
+        </div>
+        <div className="column">
+          <div className="card">
+            <h2>long term investment</h2>
             <br></br>
             <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
             <Link to="/funda">learn here</Link>
@@ -53,7 +86,7 @@ export default function menu() {
         </div>
         <div className="column">
           <div className="card">
-            <h2>Technical Analysis</h2>
+            <h2>Short term investment</h2>
             <br></br>
             <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
             <Link to="/funda">learn here</Link>
@@ -61,7 +94,7 @@ export default function menu() {
         </div>
         <div className="column">
           <div className="card">
-            <h2>Technical Analysis</h2>
+            <h2>Mid term investment</h2>
             <br></br>
             <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
             <Link to="/funda">learn here</Link>
@@ -69,42 +102,10 @@ export default function menu() {
         </div>
         <div className="column">
           <div className="card">
-            <h2>Technical Analysis</h2>
+            <h2>Cuorses</h2>
             <br></br>
-            <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
-            <Link to="/funda">learn here</Link>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <h2>Technical Analysis</h2>
-            <br></br>
-            <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
-            <Link to="/funda">learn here</Link>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <h2>Technical Analysis</h2>
-            <br></br>
-            <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
-            <Link to="/funda">learn here</Link>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <h2>Technical Analysis</h2>
-            <br></br>
-            <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
-            <Link to="/funda">learn here</Link>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <h2>Technical Analysis</h2>
-            <br></br>
-            <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
-            <Link to="/funda">learn here</Link>
+            <p>Comming soon</p>
+            <Link to="#">learn here</Link>
           </div>
         </div>
       </div>
