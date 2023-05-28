@@ -14,7 +14,10 @@ export default function menu() {
           <div className="card">
             <h2>Fundamentel Analysis</h2>
             <br></br>
-
+            <p>
+              Fundamental Analysis (FA) is a holistic 
+              
+            </p>
             <Link to="/funda">learn here</Link>
           </div>
         </div>
@@ -23,7 +26,7 @@ export default function menu() {
             <h2>Technical Analysis</h2>
             <br></br>
             <br></br>
-            
+
             <Link to="/funda">learn here</Link>
           </div>
         </div>
@@ -81,7 +84,7 @@ export default function menu() {
             <h2>long term investment</h2>
             <br></br>
             <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
-            <Link to="/funda">learn here</Link>
+            <Link to="/long">learn here</Link>
           </div>
         </div>
         <div className="column">
@@ -89,7 +92,7 @@ export default function menu() {
             <h2>Short term investment</h2>
             <br></br>
             <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
-            <Link to="/funda">learn here</Link>
+            <Link to="/short">learn here</Link>
           </div>
         </div>
         <div className="column">
@@ -97,7 +100,7 @@ export default function menu() {
             <h2>Mid term investment</h2>
             <br></br>
             <p>kshfkjlsdhfklhsklhfkljshfkljshffhsdjfhkshf</p>
-            <Link to="/funda">learn here</Link>
+            <Link to="/mid">learn here</Link>
           </div>
         </div>
         <div className="column">

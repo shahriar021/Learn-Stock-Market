@@ -12,6 +12,9 @@ import Intra from './pages/Intra';
 import { BrowserRouter as Router, Route, Routes,Link } from "react-router-dom";
 import Tradrule from './pages/Tradrule';
 import Mind from './pages/Mind';
+import Long from './pages/Long';
+import Short from './pages/Short';
+import Mid from './pages/Mid';
 
 
 
@@ -32,6 +35,9 @@ function App() {
           <Route exact path="/intrad" element={<Intra />} />
           <Route exact path="/tradinrules" element={<Tradrule />} />
           <Route exact path="/mind" element={<Mind />} />
+          <Route exact path="/long" element={<Long />} />
+          <Route exact path="/short" element={<Short />} />
+          <Route exact path="/mid" element={<Mid />} />
           
         </Routes>
       </div>
