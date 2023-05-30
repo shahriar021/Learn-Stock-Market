@@ -15,6 +15,7 @@ import Mind from './pages/Mind';
 import Long from './pages/Long';
 import Short from './pages/Short';
 import Mid from './pages/Mid';
+import Tech from './pages/Tech';
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route exact path="/long" element={<Long />} />
           <Route exact path="/short" element={<Short />} />
           <Route exact path="/mid" element={<Mid />} />
+          <Route exact path="/tech" element={<Tech />} />
           
         </Routes>
       </div>

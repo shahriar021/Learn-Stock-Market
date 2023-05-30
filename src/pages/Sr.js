@@ -5,84 +5,165 @@ export default function sr() {
   return (
     <div>
       <Navbar />
-      <div style={{ textAlign: "center" }}>
-        <img src="data:image/png;base64,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" />
+
+      <div className="row">
+        <div className="col-4">
+          <div id="list-example" className="list-group">
+            <a
+              className="list-group-item list-group-item-action"
+              href="#list-item-1"
+            >
+              What Is Support?
+            </a>
+            <a
+              className="list-group-item list-group-item-action"
+              href="#list-item-2"
+            >
+              What Is Resistance?
+            </a>
+            <a
+              className="list-group-item list-group-item-action"
+              href="#list-item-3"
+            >
+              Support and Resistance defined
+            </a>
+            <a
+              className="list-group-item list-group-item-action"
+              href="#list-item-4"
+            >
+              Support and Resistance Reversals
+            </a>
+          </div>
+        </div>
+        <div className="col-8">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+            className="scrollspy-example"
+            tabindex="0"
+          >
+            <h4 id="list-item-1">What Is Support?</h4>
+            <p>
+              In a downtrend, prices fall because there is an excess of supply
+              over demand. The lower prices go, the more attractive prices
+              become to those waiting on the sidelines to buy the shares. At
+              some level, demand that would have been slowly increasing will
+              rise to the level where it matches supply. At this point, prices
+              will stop falling. This is support. Support can be a price level
+              on the chart or a price zone. In any event, support is an area on
+              a price chart that shows buyers’ willingness to buy. It is at this
+              level that demand will usually overwhelm supply, causing the price
+              decline to halt and reverse.
+            </p>
+            <h4 id="list-item-2">What Is Resistance?</h4>
+            <p>
+              Resistance is the opposite of support. Prices move up because
+              there is more demand than supply. As prices move higher, there
+              will come a point when selling will overwhelm the desire to buy.
+              This happens for a variety of reasons. It could be that traders
+              have determined that prices are too high or have met their target.
+              It could be the reluctance of buyers to initiate new positions at
+              such rich valuations. It could be for any other number of reasons.
+              But a technician will clearly see on a price chart a level at
+              which supply begins to overwhelm demand. This is resistance. Like
+              support, it can be a level or a zone. Once an area or “zone” of
+              support or resistance has been identified, those price levels can
+              serve as potential entry or exit points because, as price reaches
+              a point of previous support or resistance, it will do one of two
+              things: bounce back away from the support or resistance level, or
+              violate the price level and continue in its prior direction—until
+              it hits the next support or resistance level. The timing of some
+              trades is based on the belief that support and resistance zones
+              will not be broken. Whether the price is halted by or breaks
+              through the support or resistance level, traders can “bet” on the
+              direction of price and can quickly determine if they are correct.
+              If the price moves in the wrong direction (breaks through prior
+              support or resistance levels), the position can be closed at a
+              small loss. If the price moves in the right direction (respects
+              prior support or resistance levels), however, the move may be
+              substantial.
+            </p>
+            <h4 id="list-item-3">Support and Resistance defined</h4>
+            <p>
+              Support and resistance can be found in all charting time periods;
+              daily, weekly, monthly. Traders also find support and resistance
+              in smaller time frames like one-minute and five-minute charts. But
+              the longer the time period, the more significant the support or
+              resistance. To identify support or resistance, you have to look
+              back at the chart to find a significant pause in a price decline
+              or rise. Then look forward to see whether a price halts and/or
+              reverses as it approaches that level. As has been noted above,
+              many experienced traders will pay attention to past support or
+              resistance levels and place traders in anticipation of a future
+              similar reaction at these levels. Technical analysis is not an
+              exact science, and sometimes price will dip below support levels
+              or reverse before it gets to the prior support level. The same is
+              true for resistance: Price may reverse before it gets to the prior
+              resistance level or break above it. In each case, flexibility is
+              required in interpreting these chart patterns. This is why support
+              and resistance levels are sometimes referred to as zones. There is
+              nothing magical about these price levels. It is simply that many
+              market participants are acting off the same information and
+              placing trades at similar levels. Most experienced traders can
+              share stories about how the price of an asset tends to halt when
+              it gets to a certain level. For example, assume that Jim was
+              holding a position in stock from March to November and that he was
+              expecting the value of the shares to increase. Let’s imagine that
+              Jim notices that the price fails to get above $39 several times
+              over several months, even though it has gotten very close to
+              moving above that level. In this case, traders would call the
+              price level near $39 a level of resistance. As you can see from
+              the chart below, resistance levels are also regarded as a ceiling
+              because these price levels represent areas where a rally runs out
+              of gas.Support levels are on the flip side of the coin. Support
+              refers to the price level on a chart where equilibrium is reached.
+              This means that demand has increased to match supply. This causes
+              the decline in the price of the asset to halt; therefore, price
+              has reached a price floor. As you can see from the chart below,
+              the horizontal line below price represents the price floor. You
+              can see by the blue arrows underneath the vertical line that price
+              has touched this level four times in the past. This is the level
+              where demand comes in, preventing further declines. This is
+              support.
+              <img src="https://www.investopedia.com/thmb/S1NGs1eUb8lBxTAB-l5aEaZ0gSw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/dotdash_Final_Support_and_Resistance_Basics_Aug_2020-01-1c737e0debbe49a88d79388977f33b0c.jpg" />
+              <img src="https://www.investopedia.com/thmb/QQUn5ACcl38fpf3adM-FOBPBlHs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/dotdash_Final_Support_and_Resistance_Basics_Aug_2020-02-fc5a37801b9944a6bc17886b19c3ea14.jpg" />
+            </p>
+            <h4 id="list-item-4">Support and Resistance Reversals</h4>
+            <p>
+              A previous support level will sometimes become a resistance level
+              when the price attempts to move back up, and conversely, a
+              resistance level will become a support level as the price
+              temporarily falls back. Price charts allow traders and investors
+              to visually identify areas of support and resistance, and they
+              give clues regarding the significance of these price levels. More
+              specifically, they look at: Number of Touches The more times that
+              the price tests a support or resistance area, the more significant
+              the level becomes. When prices keep bouncing off a support or
+              resistance level, more buyers and sellers notice and will base
+              trading decisions on these levels. Preceding Price Move Support
+              and resistance zones are likely to be more significant when they
+              are preceded by steep advances or declines. For example, a fast,
+              steep advance or uptrend will be met with more competition and
+              enthusiasm and may be halted by a more significant resistance
+              level than a slow, steady advance. A slow advance may not attract
+              as much attention. This is a good example of how market psychology
+              drives technical indicators. Volume at Certain Price Levels The
+              more buying and selling that has occurred at a particular price
+              level, the stronger the support or resistance level is likely to
+              be. This is because traders and investors remember these price
+              levels and are apt to use them again. When strong activity occurs
+              on high volume and the price drops, a lot of selling will likely
+              occur when price returns to that level, since people are far more
+              comfortable closing out a trade at the breakeven point than at a
+              loss. Time Support and resistance zones seen in longer time frame
+              charts such as weekly or monthly charts are often more significant
+              than those seen in shorter time frame charts such as the
+              one-minute or five-minute chart.
+            </p>
+          </div>
+        </div>
       </div>
-      While discussing candlestick patterns, we had learnt about the entry and
-      the stoploss points. However, the target price was not discussed. We will
-      discuss the same in this chapter. The best way to identify the target
-      price is to identify the support and resistance points. The support and
-      resistance (S&R) are specific price points on a chart expected to attract
-      the maximum amount of either buying or selling. The support price is a
-      price at which one can expect more buyers than sellers. Likewise, the
-      resistance price is a price at which one can expect more sellers than
-      buyers. On a standalone basis, traders can use S&R to identify trade entry
-      points as well. M2-Ch11-title1 11.1 – The Resistance As the name suggests,
-      resistance is something which stops the price from rising further. The
-      resistance level is a price point on the chart where traders expect
-      maximum supply (in terms of selling) for the stock/index. The resistance
-      level is always above the current market price. The likelihood of the
-      price rising to the resistance level, consolidating, absorbing all the
-      supply, and declining is high. The resistance is one of the critical
-      technical analysis tools which market participants look at in a rising
-      market. The resistance often acts as a trigger to sell. Here is the chart
-      of Ambuja Cements Limited. The horizontal line coinciding at Rs.215 on the
-      chart, marks the resistance level for Ambuja Cements. M2-Ch11-chart1 I
-      have deliberately compressed the chart to include more data points, the
-      reasons for which I will shortly explain. But before that there are two
-      things that you need to pay attention to while looking at the above chart:
-      The resistance level, indicated by a horizontal line, is higher than the
-      current market price. While the resistance level is at 215, the current
-      candle is at 206.75. The current candle and its corresponding price level
-      are encircled for your reference For a moment let us imagine Ambuja cement
-      at Rs.206 forming a bullish marubuzo with a low of 202. We know this is a
-      signal to initiate a long trade, and we also know that the stoploss for
-      this trade is at 202. With the new-found knowledge on resistance, we now
-      know that we can set 215 as a possible target for this trade! Why 215 you
-      may wonder? The reasons are simple:- The resistance of 215 implies there
-      is a likelihood of excess supply. Excess supply builds selling pressure.
-      Selling pressure tends to drag the prices lower. Hence for reasons stated
-      above, when a trader is long, he can look at resistance points to set
-      targets and to set exit points for the trade. Also, with the
-      identification of the resistance, the long trade can now be completely
-      designed as follows: Entry – 206, Stoploss – 202, and Target – 215. The
-      next obvious question is, how do we identify the resistance level?
-      Identifying price points as either a support or resistance is extremely
-      simple. The identification process is the same for both support and
-      resistance. If the current market price is below the identified point, it
-      is called a resistance point; else it is called a support point. Since the
-      process is the same, let us proceed to understand ‘support’, and we will
-      follow it up with the procedure to identify S&R. M2-Ch11-title2 11.2 – The
-      Support Having learnt about resistance, understanding the support level
-      should be quite simple and intuitive. As the name suggests, support is
-      something that prevents the price from falling further. The support level
-      is a price point on the chart where the trader expects maximum demand (in
-      terms of buying) coming into the stock/index. Whenever the price falls to
-      the support line, it is likely to bounce back. The support level is always
-      below the current market price. There is a maximum likelihood that the
-      price could fall until the support, consolidate, absorb all the demand,
-      and then start moving upwards. The support is one of the critical
-      technical level market participants look for in a falling market. The
-      support often acts as a trigger to buy. Here is the chart of Cipla
-      Limited. The horizontal line coinciding at 435 on the chart marks the
-      support level for Cipla. M2-Ch11-chart2 Few things that you need to notice
-      on the chart above: The support level, indicated by the horizontal line is
-      below the current market price. While the support level is at 435, the
-      current candle is at 442.5. The current candle and its corresponding price
-      level are encircled for your reference Like we did while understanding
-      resistance, let us imagine a bearish pattern formation – perhaps a
-      shooting star at 442 with a high of 446. Clearly, with a shooting star,
-      the call is too short Cipla at 442, with 446 as the stoploss. Since we
-      know 435 the immediate support, we can set the target at 435. So what
-      makes Rs.435 target worthy? The following reasons back the decision:
-      Support at 435 implies there is a maximum likely hood of excess demand to
-      emerge. Excess demand builds buying pressure. Buying pressure tends to
-      drag the price higher. Hence for the reasons stated above, when a trader
-      is short, he can look at support points to set targets and to set exit
-      points for the trade. Also, with the identification of the support, the
-      short trade is now completely designed. Entry – 442, stoploss – 446, and
-      target – 435.
-      <br />
     </div>
   );
 }

@@ -6,6 +6,8 @@ export default function Tradrule() {
   return (
     <div>
       <Navbar />
+      <h1 style={{ textAlign: "center" }}>Trading Rules</h1>
+      <br />
       <div className="row">
         <div className="col-4">
           <div

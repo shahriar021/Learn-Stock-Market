@@ -14,10 +14,7 @@ export default function menu() {
           <div className="card">
             <h2>Fundamentel Analysis</h2>
             <br></br>
-            <p>
-              Fundamental Analysis (FA) is a holistic 
-              
-            </p>
+            <p>Fundamental Analysis (FA) is a holistic</p>
             <Link to="/funda">learn here</Link>
           </div>
         </div>
@@ -25,16 +22,17 @@ export default function menu() {
           <div className="card">
             <h2>Technical Analysis</h2>
             <br></br>
-            <br></br>
 
-            <Link to="/funda">learn here</Link>
+            <p>Technical analysis is a tool, or</p>
+
+            <Link to="/tech">learn here</Link>
           </div>
         </div>
         <div className="column">
           <div className="card">
             <h2>The Support and Resistance</h2>
-            <br></br>
-
+            
+            <p>In a downtrend, prices fall </p>
             <Link to="/sr">learn here</Link>
           </div>
         </div>
